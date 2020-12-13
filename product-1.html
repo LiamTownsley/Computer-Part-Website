@@ -3,57 +3,64 @@
 	<head>
 	    <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <title>Product 1</title>
+	    <title>PC Parts - RAM</title>
 	    <link rel="stylesheet" href="style.css">
-	    <script src="https://kit.fontawesome.com/99d3fc8a3a.js" crossorigin="anonymous"></script>
-		<script type="text/javascript">
-		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-		(function(){
-			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-			s1.async=true;
-			s1.src='https://embed.tawk.to/5948124350fd5105d0c81d23/default';
-			s1.charset='UTF-8';
-			s1.setAttribute('crossorigin','*');
-			s0.parentNode.insertBefore(s1,s0);
-		  })();
-	     </script>
+		<script src="https://kit.fontawesome.com/99d3fc8a3a.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="./script.js"></script>
+		<link rel="icon" type="image/png" href="./images/favicon.png"/>
 	</head>
 	
 	<body>
-		<div class="topnav">
-			<a href="index.html">Home Page</a>
-	    	<a href="about.html">About Us</a>
-	    	<div class="dropdown active">
-	      		<button class="dropbtn">Our Products
-	        		<em class="fa fa-caret-down"></em>
-	      		</button>
-	    		<div class="dropdown-content">
-	      			<a href="product-1.html">Random Access Memory</a>
-	      			<a href="product-2.html">Computer Case</a>
-	      			<a href="product-3.html">Solid State Drive</a>
-	      		</div>
-	    	</div>
-	  	</div>
-	  
-		<div class="maindiv">
-	    	<h1>Product 1: RAM</h1>
-			<p>Here you can buy RAM for you computer!</p>
-		
-			<img src="./images/ram.jpg" alt="Random Access Memory" width="300" height="300">
-		
-			<h2>About this item:</h2>
-			<ul>
-				<li>Size: Capacity	128GB</li>
-				<li>Memory Model: Vengeance RGB PRO Black</li>
-				<li>Max. Memory Channels Provided by Kit: Quad (4)</li>
-				<li>Memory Type: DDR4</li>
-				<li>Memory Speed: PC4-28800 (3600)</li>
-				<li>Pins: 288</li>
-				<li>CAS Latency: 18-22-22-42</li>
-				<li>Voltage: 1.35 V</li>
-			</ul>
-		
-			<a href="https://www.scan.co.uk/products/128gb-4x32gb-corsair-ddr4-vengeance-rgb-pro-black-pc4-28800-3600-non-ecc-unbuff-cas-18-22-22-42-rgb">BUY NOW!</a>
+		<div class="wrapper">
+			<div class="topnav">
+				<a href="index.html">Home Page</a>
+	    		<a href="about.html">About Us</a>
+	    		<div class="dropdown active">
+	    	  		<button class="dropbtn">Our Products
+	    	    		<em class="fa fa-caret-down"></em>
+	    	  		</button>
+					  <div class="dropdown-content">
+						<a href="product-1.html">Random Access Memory</a>
+						<a href="product-2.html">Computer Case</a>
+					  	<a href="product-3.html">Solid State Drive</a>
+					  	<a href="product-4.html">Central Processing Unit</a>
+					  	<a href="product-5.html">Graphics Processing Unit</a>
+					  	<a href="product-6.html">Power Supply Unit</a>  
+					</div>
+				</div>
+				<a href="parts.html">PC Parts</a>
+				<a href="login.html" style="float: right;">Login
+					<em class="fas fa-sign-in-alt"></em>
+				</a>
+				<a style="float: right;" href="sign-up.html">Sign Up
+					<em class="fas fa-user-plus"></em>
+				</a>
+	  		</div>
+		  
+			<div class="maindiv">
+	    		<h1>Vengeance PRO 128GB</h1>
+				<p>Here you can buy RAM for you computer!</p>
+			
+				<img id="product-image" src="./images/ram.png" alt="Random Access Memory" width="300" height="300">
+			
+				<h1 id="aboutitem"><strong>ABOUT THIS ITEM</strong></h1>
+				<p id="aboutsubtitle"><em>Click above to show technical information!</em></p>
+				<div id="iteminfo">
+				<ul>
+					<li>Size: Capacity	128GB</li>
+					<li>Memory Model: Vengeance RGB PRO Black</li>
+					<li>Max. Memory Channels Provided by Kit: Quad (4)</li>
+					<li>Memory Type: DDR4</li>
+					<li>Memory Speed: PC4-28800 (3600)</li>
+					<li>Pins: 288</li>
+					<li>CAS Latency: 18-22-22-42</li>
+					<li>Voltage: 1.35 V</li>
+				</ul>
+				</div>
+				<button class="buy-button" href="https://www.scan.co.uk/products/128gb-4x32gb-corsair-ddr4-vengeance-rgb-pro-black-pc4-28800-3600-non-ecc-unbuff-cas-18-22-22-42-rgb">BUY NOW!</button>
+				<br><br>
+			</div>
 		</div>
 	</body>
 </html>

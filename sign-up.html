@@ -16,7 +16,7 @@
 			<div class="topnav">
 				<a href="index.html">Home Page</a>
 	    		<a href="about.html">About Us</a>
-	    		<div class="dropdown active">
+	    		<div class="dropdown">
 	    	  		<button class="dropbtn">Our Products
 	    	    		<em class="fa fa-caret-down"></em>
 	    	  		</button>
@@ -33,33 +33,30 @@
 				<a href="login.html" style="float: right;">Login
 					<em class="fas fa-sign-in-alt"></em>
 				</a>
-				<a style="float: right;" href="sign-up.html">Sign Up
+				<a style="float: right;" class="active" href="sign-up.html">Sign Up
 					<em class="fas fa-user-plus"></em>
 				</a>
 	  		</div>
 		  
 			<div class="maindiv">
-	    		<h1>Sahara Gaming P35 C500B</h1>
-				<p>Here you can buy a case for you computer!</p>
-			
-				<img id="product-image" src="./images/computer-case.png" alt="Computer Case" width="225" height="300">
-			
-				<h1 id="aboutitem"><strong>ABOUT THIS ITEM</strong></h1>
-				<p id="aboutsubtitle"><em>Click above to show technical information!</em></p>
-				<div id="iteminfo">
-					<ul>
-						<li>Sahara Gaming P35 C500B ATX Black Tempered Glasses gaming case</li>
-						<li>Dimensions: W: 203mm H: 474mm D: 432mm (with feet)</li>
-						<li>Material(s): SGCC Steel, Tempered Glass</li>
-						<li>Weight: 10.5 kg</li>
-						<li>Motherboard Support/strong: Mini-ITX, MicroATX, and ATX</li>
-						<li>Front I/O Ports 1x USB 3.1</li>
-						<li>2x USB 2.0</li>
-						<li>1x HD Audio Jack</li>
-					</ul>
-				</div>
-				<button class="buy-button" href="https://www.novatech.co.uk/products/sahara-p35-black-atx-tempered-glass-argb-gaming-case/5060497931039.html?gclid=EAIaIQobChMI1oaRv_7F7AIVged3Ch36YAIUEAYYASABEgI9d_D_BwE&amp;utm_source=affiliatewindow&amp;utm_medium=affiliate&amp;utm_campaign=Kelkoo">BUY NOW!</button>
-				<br><br>
+				<h1>Sign Up!</h1>
+				<p>You can up for a <strong>PC Parts</strong> account now to save your information, get notified about deals, etc!</p>
+				<p>If you already have an account you can <a href="login.html" style="color:whitesmoke;">login</a>.</p>
+	    		<form id="login-form">
+					<label for="name">Name</label>
+					<input type="text" id="name" placeholder="Enter your name.">
+
+					<label for="email">Email</label>
+					<input type="email" id="name" placeholder="Enter your e-mail.">
+
+					<label for="password">Password</label>
+					<input type="password" id="password" placeholder="Enter your password.">
+
+					<label for="password">Password Hint</label>
+					<input type="password" id="password" placeholder="Enter a password hint.">
+
+					<input style="margin-top: 10px;" type="submit" value="Sign up!">
+				</form>
 		   </div>
 		</div>
 	</body>

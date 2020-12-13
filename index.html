@@ -3,43 +3,63 @@
 	<head>
 	    <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <title>Home Page</title>
+	    <title>PC Parts - Home Page</title>
 	    <link rel="stylesheet" href="style.css">
-	    <script src="https://kit.fontawesome.com/99d3fc8a3a.js" crossorigin="anonymous"></script>
-		<script type="text/javascript">
-		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-		(function(){
-			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-			s1.async=true;
-			s1.src='https://embed.tawk.to/5948124350fd5105d0c81d23/default';
-			s1.charset='UTF-8';
-			s1.setAttribute('crossorigin','*');
-			s0.parentNode.insertBefore(s1,s0);
-		  })();
-	     </script>
+		<script src="https://kit.fontawesome.com/99d3fc8a3a.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="./script.js"></script>
+		<link rel="icon" type="image/png" href="./images/favicon.png"/>
 	</head>
 
 	<body>
-		<div class="topnav">
-			<a class="active" href="index.html">Home Page</a>
-	    	<a href="about.html">About Us</a>
-	    	<div class="dropdown">
-	      		<button class="dropbtn">Our Products
-	        		<em class="fa fa-caret-down"></em>
-	      		</button>
-	    		<div class="dropdown-content">
-	      			<a href="product-1.html">Random Access Memory</a>
-	      			<a href="product-2.html">Computer Case</a>
-	      			<a href="product-3.html">Solid State Drive</a>
-	      		</div>
-	    	</div>
-	  	</div>
-	  
-		<div class="maindiv">
-	    	<h1>Company Name - Home Page</h1>
-	    	<p>To navigate around the website click up top.</p>
-	   	</div>
-		<a href="rainbow.html" style="color:#ffff;text-decoration:none;">hidden button</a>
+		<div class="wrapper">
+			<div class="topnav">
+				<a class="active" href="index.html">Home Page</a>
+	    		<a href="about.html">About Us</a>
+	    		<div class="dropdown">
+	    	  		<button class="dropbtn">Our Products
+	    	    		<em class="fa fa-caret-down"></em>
+	    	  		</button>
+					  <div class="dropdown-content">
+						<a href="product-1.html">Random Access Memory</a>
+						<a href="product-2.html">Computer Case</a>
+					  	<a href="product-3.html">Solid State Drive</a>
+					  	<a href="product-4.html">Central Processing Unit</a>
+					  	<a href="product-5.html">Graphics Processing Unit</a>
+					  	<a href="product-6.html">Power Supply Unit</a>  
+					</div>
+				</div>
+				<a href="parts.html">PC Parts</a>
+				<a href="login.html" style="float: right;">Login
+					<em class="fas fa-sign-in-alt"></em>
+				</a>
+				<a style="float: right;" href="sign-up.html">Sign Up
+					<em class="fas fa-user-plus"></em>
+				</a>
+	  		</div>
+		  
+			<div class="maindiv">
+				<img id="logo" src="./images/logo.png" height="245" width="300" alt="Logo">
+	    		<h1>PC Parts</h1>
+	    		<p>To navigate around the website click up top.</p>
+				<hr>
+				<h1>Contact Us</h1>
+				<p>If you require any assistance, contact us.</p>
+				<form id="contact-form">
+					<label for="firstname">Name</label>
+					<input type="text" id="name" placeholder="Enter your name.">
+
+					<label for="email">Email Address</label>
+					<input type="email" id="email" placeholder="Enter your e-mail address.">
+					
+					<label for="reason">Reason</label>
+					<textarea name="reason" id="reason" style="height:200px;resize: none;" placeholder="Why do you need to contact us?"></textarea>
+				
+					<input type="submit" value="Submit">
+				</form>
+				<br>
+	   		</div>
+		</div>
 	</body>
 	
 	
